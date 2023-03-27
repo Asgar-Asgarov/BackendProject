@@ -1,5 +1,5 @@
 
-namespace Models.Slider;
+namespace BackendProject.Models;
 
 public class Slider
 {
