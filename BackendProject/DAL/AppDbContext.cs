@@ -13,9 +13,23 @@ public class AppDbContext : DbContext
      public DbSet<SliderDetail>SliderDetail { get; set; }
      public DbSet<Notice>Notices { get; set; }
      public DbSet<Info> info { get; set; }
+     public DbSet<Thought> thought { get; set; }
 
      //course
      public DbSet<Category> categories  { get; set; }
      public DbSet<Course> courses { get; set; }
+     public DbSet<CourseDetail> CourseDetail { get; set; }
+
+     //event
+     public DbSet<Event> events { get; set; }
+     
+     //blog 
+     public DbSet<Blog> blog { get; set; }
+
+     //teacher
+     
+     
+
+
 
 }
