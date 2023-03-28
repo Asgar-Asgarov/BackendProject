@@ -2,6 +2,7 @@ using BackendProject.DAL;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+var _config=builder.Configuration;
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
