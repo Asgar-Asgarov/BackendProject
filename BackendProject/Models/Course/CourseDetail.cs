@@ -16,4 +16,9 @@ public class CourseDetail
     public string? Assesment { get; set; }
     public int Price { get; set; }
 
+
+    
+    public int CourseId { get; set; }
+    public Course? course { get; set; }
+
 }
