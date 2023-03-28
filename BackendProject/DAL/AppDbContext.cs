@@ -9,7 +9,7 @@ public class AppDbContext : DbContext
     {
     }
 
-    public DbSet<Slider>Sliders { get; set; }
+     public DbSet<Slider>Sliders { get; set; }
      public DbSet<SliderDetail>SliderDetail { get; set; }
      public DbSet<Notice>Notices { get; set; }
 }
