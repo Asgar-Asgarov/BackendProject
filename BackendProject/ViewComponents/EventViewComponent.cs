@@ -1,6 +1,15 @@
-﻿namespace BackendProject.ViewComponents
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace BackendProject.ViewComponents
 {
-    public class EventViewComponent
+    public class EventViewComponent:ViewComponent
     {
+        public async Task<IViewComponentResult> InvokeAsync()
+        {
+
+
+            return View();
+        }
+
     }
 }
