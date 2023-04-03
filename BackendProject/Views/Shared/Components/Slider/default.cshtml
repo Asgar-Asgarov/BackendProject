@@ -1,9 +1,13 @@
 ﻿ @model HomeVM
- <section id="slider-container" class="slider-area"> 
+
+
+     <section id="slider-container" class="slider-area"> 
             <div class="slider-owl owl-theme owl-carousel"> 
                 <!-- Start Slingle Slide -->
-                <div class="single-slide item" style="background-image: url(~/img/slider/slider1.jpg)">
-                    <!-- Start Slider Content -->
+                @foreach (var item in Model.Sliders)
+               {
+                    <div class="single-slide item" style="background-image: url(img/slider/@item.ImageUrl)">
+                          <!-- Start Slider Content -->
                     <div class="slider-content-area">  
                         <div class="container">
                             <div class="row">
@@ -21,9 +25,12 @@
                         </div>
                     </div>
                     <!-- Start Slider Content -->
+                     </div>
+                }
+              
                 </div>
                 <!-- End Slingle Slide -->
 
                 <!-- End Slingle Slide -->								
-            </div>
+            
         </section>
