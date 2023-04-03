@@ -19,7 +19,7 @@ namespace BackendProject.ViewComponents
            BlogVM blogVM = new BlogVM();
            blogVM.Blogs= _appDbContext.blog.Take(3).ToList();
 
-            return View();
+            return View(blogVM);
         }
     }
 }
