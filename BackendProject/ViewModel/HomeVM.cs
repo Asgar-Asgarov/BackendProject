@@ -8,6 +8,7 @@ namespace BackendProject.ViewModel
         public List<Slider>?  Sliders { get; set; }
         public SliderDetail? SliderDetail { get; set; }
         public List<Notice>? Notices { get; set; }
+        public Info? info { get; set; }
 
     }
 }
