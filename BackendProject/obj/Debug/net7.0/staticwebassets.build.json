@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ojrYxXSHPKHjMfnuCJvns4VmgDvPep4dKnW+JLhvpMc=",
+  "Hash": "eRWD71KrwJLuv8nG3AzmqwW6nmHGGU3tJ7QN6lP6bkU=",
   "Source": "BackendProject",
   "BasePath": "_content/BackendProject",
   "Mode": "Default",
@@ -1955,12 +1955,12 @@
       "OriginalItemSpec": "wwwroot\\img\\testimonial\\testimonial-bg.jpg"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\backend projects\\BackenProject3\\BackendProject\\wwwroot\\img\\testimonial\\testimonial.jpg",
+      "Identity": "C:\\Users\\User\\Desktop\\backend projects\\BackenProject3\\BackendProject\\wwwroot\\img\\testimonial\\testimonial1.jpg",
       "SourceId": "BackendProject",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\User\\Desktop\\backend projects\\BackenProject3\\BackendProject\\wwwroot\\",
       "BasePath": "_content/BackendProject",
-      "RelativePath": "img/testimonial/testimonial.jpg",
+      "RelativePath": "img/testimonial/testimonial1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1969,7 +1969,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\testimonial\\testimonial.jpg"
+      "OriginalItemSpec": "wwwroot\\img\\testimonial\\testimonial1.jpg"
     },
     {
       "Identity": "C:\\Users\\User\\Desktop\\backend projects\\BackenProject3\\BackendProject\\wwwroot\\js\\ajax-mail.js",
