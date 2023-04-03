@@ -1,6 +1,7 @@
 ﻿using BackendProject.DAL;
 using Microsoft.AspNetCore.Mvc;
 using BackendProject.ViewModel;
+using Microsoft.EntityFrameworkCore;
 
 namespace BackendProject.ViewComponents
 {
@@ -16,9 +17,10 @@ namespace BackendProject.ViewComponents
         public async Task<IViewComponentResult> InvokeAsync()
         {
             HomeVM homeVM = new HomeVM();
-            homeVM.Sliders = _appDbContext.Sliders.ToList();
+            homeVM.Sliders = _appDbContext.Sliders.Include(s=>s.SliderDetail).ToList();
+           
 
-            return View(homeVM);
+            return View(await Task.FromResult(homeVM));
         }
     }
 }
