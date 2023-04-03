@@ -2,7 +2,7 @@ using BackendProject.Models;
 
 namespace BackendProject.ViewModel;
 
-public class CourseVM
+public class BlogVM
 {
-    public List<Course>? Courses { get; set; }
+    public List<Blog>? Blogs { get; set; }
 }
