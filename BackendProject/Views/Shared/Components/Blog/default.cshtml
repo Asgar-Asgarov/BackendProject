@@ -22,7 +22,7 @@
                     </div>
                     <div class="blog-content">
                         <div class="blog-top">
-                            <p>By @item.Author  /  @item.time  /  <i class="fa fa-comments-o"></i>@item.CommentCount</p>
+                            <p>By @item.Author  /  @item.time.ToString("MMMM d, yyyy",CultureInfo.CreateSpecificCulture("en-US"))  /  <i class="fa fa-comments-o"></i>@item.CommentCount</p>
                         </div>
                         <div class="blog-bottom">
                             <h2><a href="blog-details.html">@item.Title </a></h2>

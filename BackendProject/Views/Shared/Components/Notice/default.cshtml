@@ -8,7 +8,7 @@
                             @foreach (var item in Model.Notices)
                             {
                                 <div class="single-notice-left mb-25 pb-25">
-                                <h4>@item.Date</h4>
+                                <h4>@item.Date.ToString("d, MMMM yyyy",CultureInfo.CreateSpecificCulture("en-US"))</h4>
                                 <p>@item.Description </p>
                             </div>
                             
