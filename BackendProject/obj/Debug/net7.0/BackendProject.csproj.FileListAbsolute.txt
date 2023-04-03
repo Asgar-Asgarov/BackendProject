@@ -160,3 +160,14 @@ C:\Users\asgaryas\Desktop\BackendProject\BackendProject\obj\Debug\net7.0\refint\
 C:\Users\asgaryas\Desktop\BackendProject\BackendProject\obj\Debug\net7.0\BackendProject.pdb
 C:\Users\asgaryas\Desktop\BackendProject\BackendProject\obj\Debug\net7.0\BackendProject.genruntimeconfig.cache
 C:\Users\asgaryas\Desktop\BackendProject\BackendProject\obj\Debug\net7.0\ref\BackendProject.dll
+C:\Users\User\Desktop\backend projects\BackenProject3\BackendProject\obj\Debug\net7.0\BackendProject.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\backend projects\BackenProject3\BackendProject\obj\Debug\net7.0\BackendProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\backend projects\BackenProject3\BackendProject\obj\Debug\net7.0\BackendProject.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\backend projects\BackenProject3\BackendProject\obj\Debug\net7.0\BackendProject.AssemblyInfo.cs
+C:\Users\User\Desktop\backend projects\BackenProject3\BackendProject\obj\Debug\net7.0\BackendProject.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\backend projects\BackenProject3\BackendProject\obj\Debug\net7.0\BackendProject.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\Desktop\backend projects\BackenProject3\BackendProject\obj\Debug\net7.0\BackendProject.RazorAssemblyInfo.cache
+C:\Users\User\Desktop\backend projects\BackenProject3\BackendProject\obj\Debug\net7.0\BackendProject.RazorAssemblyInfo.cs
+C:\Users\User\Desktop\backend projects\BackenProject3\BackendProject\obj\Debug\net7.0\BackendProject.dll
+C:\Users\User\Desktop\backend projects\BackenProject3\BackendProject\obj\Debug\net7.0\refint\BackendProject.dll
+C:\Users\User\Desktop\backend projects\BackenProject3\BackendProject\obj\Debug\net7.0\BackendProject.pdb

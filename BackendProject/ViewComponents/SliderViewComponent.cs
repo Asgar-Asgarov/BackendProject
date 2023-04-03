@@ -1,5 +1,6 @@
 ﻿using BackendProject.DAL;
 using Microsoft.AspNetCore.Mvc;
+using BackendProject.ViewModel;
 
 namespace BackendProject.ViewComponents
 {
@@ -14,9 +15,10 @@ namespace BackendProject.ViewComponents
 
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            var sliders = _appDbContext.Sliders.ToList();
+            HomeVM homeVM = new HomeVM();
+            homeVM.Sliders = _appDbContext.Sliders.ToList();
 
-            return View(sliders);
+            return View(homeVM);
         }
     }
 }
