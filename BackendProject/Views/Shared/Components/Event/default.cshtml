@@ -1,15 +1,22 @@
-﻿                    
-                    <div class="col-md-6 col-sm-12 col-xs-12">
+﻿@model EventVM       
+     
+     @foreach (var item in Model.events)
+     {
+        
+     
+               <div class="col-md-6 col-sm-12 col-xs-12">
                         <div class="single-event mb-35">
                             <div class="event-date">
-                                <h3><a href="event-details.html">20 <span>June</span></a></h3>
+                                <h3><a href="event-details.html">@item.eventDetail.date.ToString("dd") <span>@item.eventDetail.date.ToString("MMMM",CultureInfo.CreateSpecificCulture("en-US"))</span></a></h3>
                             </div>
                             <div class="event-content text-left">
                                 <div class="event-content-left">
-                                    <h4><a href="event-details.html">MICRO BIOLOGICAL WORKSHOP</a></h4>
+                              
+                                    <h4><a href="event-details.html">@item.Name</a></h4>
+                                      
                                     <ul>
-                                        <li><i class="fa fa-clock-o"></i>9.00 AM - 4.45 PM</li>
-                                        <li><i class="fa fa-map-marker"></i>New Yourk City</li>
+                                        <li><i class="fa fa-clock-o"></i>@item.eventDetail.startTime.ToString("hh:mm tt",CultureInfo.CreateSpecificCulture("en-US")) - @item.eventDetail.finishTime.ToString("hh:mm tt",CultureInfo.CreateSpecificCulture("en-US"))</li>
+                                        <li><i class="fa fa-map-marker"></i>@item.eventDetail.Place</li>
                                     </ul>
                                 </div>
                                 <div class="event-content-right">
@@ -19,23 +26,10 @@
                         </div>
 
                     </div>
-                    <div class="col-md-6 hidden-sm hidden-xs">
-                        <div class="single-event mb-35">
-                            <div class="event-date">
-                                <h3><a href="event-details.html">12 <span>June</span></a></h3>
-                            </div>
-                            <div class="event-content text-left">
-                                <div class="event-content-left">
-                                    <h4><a href="event-details.html">MATHEMATICAL WORKSHOP</a></h4>
-                                    <ul>
-                                        <li><i class="fa fa-clock-o"></i>9.00 AM - 4.45 PM</li>
-                                        <li><i class="fa fa-map-marker"></i>New Yourk City</li>
-                                    </ul>
-                                </div>
-                                <div class="event-content-right">
-                                    <a class="default-btn" href="event-details.html">join now</a>
-                                </div>
-                            </div>
-                        </div>
-   
-                    </div>
+                     
+               
+                        
+                      }
+
+     
+                  

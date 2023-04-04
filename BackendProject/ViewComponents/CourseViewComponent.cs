@@ -18,6 +18,7 @@ namespace BackendProject.ViewComponents
         {
           CourseVM courseVM = new CourseVM();
           courseVM.Courses=_appDbContext.courses.Take(3).ToList();
+          
             return View(await Task.FromResult(courseVM));
         }
 
