@@ -17,5 +17,6 @@ public class EventDetail
     public int EventId { get; set; }
     public Event?  Event { get; set; }
 
-    public Speaker? Speaker { get; set; }
+   public List<EventSpeaker>? EventSpeakers { get; set; }
+
 }

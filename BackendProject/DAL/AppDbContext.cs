@@ -25,6 +25,7 @@ public class AppDbContext : DbContext
      public DbSet<EventDetail> eventDetail { get; set; }
      public DbSet<Speaker> Speaker { get; set; }
      public DbSet<EventSpeaker> EventSpeaker { get; set; }
+    
      //blog 
      public DbSet<Blog> blog { get; set; }
      public DbSet<BlogDetail> BlogDetail { get; set; }

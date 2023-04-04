@@ -9,7 +9,6 @@ public class Speaker
     public string? Profession { get; set; }
     public string? CompanyName { get; set; }
 
-    public int EventDetailId { get; set; }
-    public EventDetail? eventDetail { get; set; }
+    public List<EventSpeaker>? EventSpeakers { get; set; }
     
 }
