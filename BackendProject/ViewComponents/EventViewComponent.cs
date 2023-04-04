@@ -14,10 +14,12 @@ namespace BackendProject.ViewComponents
         public async Task<IViewComponentResult> InvokeAsync()
         {
          EventVM eventVM = new EventVM();
-         eventVM.events=_appDbContext.events.Take(3).ToList();
+         eventVM.events=_appDbContext.events.Include(s=>s.eventDetail).Take(8).ToList();
          
             return View(await Task.FromResult(eventVM));
         }
 
     }
 }
+
+

@@ -22,12 +22,19 @@ public class AppDbContext : DbContext
 
      //event
      public DbSet<Event> events { get; set; }
-     
+     public DbSet<EventDetail> eventDetail { get; set; }
+     public DbSet<Speaker> Speaker { get; set; }
+     public DbSet<EventSpeaker> EventSpeaker { get; set; }
      //blog 
      public DbSet<Blog> blog { get; set; }
+     public DbSet<BlogDetail> BlogDetail { get; set; }
+     
 
      //teacher
-     
+
+
+     //Icon
+     public DbSet<Icon> Icon { get; set; }    
      
 
 

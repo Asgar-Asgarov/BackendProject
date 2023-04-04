@@ -4,6 +4,7 @@ using BackendProject.DAL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BackendProject.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230404113355_ModifyIcon")]
+    partial class ModifyIcon
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -212,6 +215,9 @@ namespace BackendProject.Migrations
                     b.Property<string>("Place")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Speakers")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("date")
                         .HasColumnType("datetime2");
 
@@ -336,37 +342,6 @@ namespace BackendProject.Migrations
                     b.ToTable("SliderDetail");
                 });
 
-            modelBuilder.Entity("BackendProject.Models.Speaker", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("CompanyName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("EventDetailId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ImageUrl")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Profession")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("EventDetailId")
-                        .IsUnique();
-
-                    b.ToTable("Speaker");
-                });
-
             modelBuilder.Entity("BackendProject.Models.Thought", b =>
                 {
                     b.Property<int>("Id")
@@ -447,17 +422,6 @@ namespace BackendProject.Migrations
                     b.Navigation("slider");
                 });
 
-            modelBuilder.Entity("BackendProject.Models.Speaker", b =>
-                {
-                    b.HasOne("BackendProject.Models.EventDetail", "eventDetail")
-                        .WithOne("Speaker")
-                        .HasForeignKey("BackendProject.Models.Speaker", "EventDetailId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("eventDetail");
-                });
-
             modelBuilder.Entity("BackendProject.Models.Blog", b =>
                 {
                     b.Navigation("blogDetail");
@@ -477,11 +441,6 @@ namespace BackendProject.Migrations
             modelBuilder.Entity("BackendProject.Models.Event", b =>
                 {
                     b.Navigation("eventDetail");
-                });
-
-            modelBuilder.Entity("BackendProject.Models.EventDetail", b =>
-                {
-                    b.Navigation("Speaker");
                 });
 
             modelBuilder.Entity("BackendProject.Models.Slider", b =>

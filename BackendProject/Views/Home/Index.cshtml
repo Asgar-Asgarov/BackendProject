@@ -14,7 +14,21 @@
        @await Component.InvokeAsync("Course")
         <!-- Courses Area End -->
         <!-- Event Area Start -->
+        <div class="event-area one text-center pt-140 pb-150">
+        <div class="container">
+                 <div class="row">
+                     <div class="col-xs-12">
+                        <div class="section-title">
+                            <img src="img/icon/section.png" alt="section-title">
+                            <h2>UPCOMMING EVENTS</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
        @await Component.InvokeAsync("Event")
+                </div>
+           </div>
+        </div>
         <!-- Event Area End -->
         <!-- Testimonial Area Start -->
       @await Component.InvokeAsync("Thought")

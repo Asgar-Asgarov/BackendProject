@@ -1,14 +1,9 @@
 
 namespace BackendProject.Models;
 
-public class Event
+public class TeacherDetail
 {
     public int Id { get; set; }
     public string? Name { get; set; }
-   
-    
-
-    public EventDetail? eventDetail { get; set; }
-   
-  
+    public string? Degree { get; set; }
 }

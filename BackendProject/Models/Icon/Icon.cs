@@ -1,7 +1,9 @@
 
 namespace BackendProject.Models;
 
-public class Teacher
+public class Icon
 {
     public int Id { get; set; }
+    public string? IconUrl { get; set; }
+  
 }
